@@ -1,0 +1,6 @@
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.csproj.AssemblyReference.cache
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.AssemblyInfoInputs.cache
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.AssemblyInfo.cs
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.csproj.CoreCompileInputs.cache
+C:\Users\brett\RiderProjects\WeeklyChallenges\ChallengesWithTestsMark8.Tests\obj\Debug\net6.0\ChallengesWithTestsMark8.Tests.sourcelink.json
