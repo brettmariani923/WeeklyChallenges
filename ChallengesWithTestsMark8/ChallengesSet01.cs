@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 
 namespace ChallengesWithTestsMark8
 {
@@ -7,7 +8,7 @@ namespace ChallengesWithTestsMark8
     {
        
 
-        public static bool AreTwoNumbersTheSame(int num1, int num2)
+        public bool AreTwoNumbersTheSame(int num1, int num2)
         {
             if(num1 == num2)
             {
@@ -20,19 +21,19 @@ namespace ChallengesWithTestsMark8
         }
       
 
-        public static double Subtract(double minuend, double subtrahend)
+        public  double Subtract(double minuend, double subtrahend)
         {
             return minuend - subtrahend;
         }
         
 
-        public static int Add(int number1, int number2)
+        public  int Add(int number1, int number2)
         {
             return number1 + number2;
         }
       
 
-        public static int GetSmallestNumber(int number1, int number2)
+        public int GetSmallestNumber(int number1, int number2)
         {
             if (number1 < number2)
             {
@@ -45,54 +46,28 @@ namespace ChallengesWithTestsMark8
         }
 
 
-        public static long Multiply(long factor1, long factor2)
+        public long Multiply(long factor1, long factor2)
         {
             return factor1 * factor2;
         }
+
+
+        public string GetGreeting(string nameOfPerson)
+        {
+            if (!string.IsNullOrEmpty(nameOfPerson))
+            {
+                return $"Hello, {nameOfPerson}!";
+            } 
+            else
+            {
+                return $"Hello!";
+            }
+        }
        
 
-        public static string GetGreeting(string nameOfPerson)
-        { 
-            return $"Hello, {nameOfPerson}";
-        }
-       
-
-        public static string GetHey()
+        public  string GetHey()
         {
-            return "hey";
+            return "HEY!";
         }
-
-
-        public static void Main(string[] args)
-        {
-            //week 1
-
-            int a = 23;
-            int b = 29;
-            double c = 23.5;
-            double d = 12.4;
-            string e = "Brett";
-
-            Add(a, b);
-
-            Subtract(c, d);
-
-            Multiply(a, b);
-
-            GetGreeting(e);
-
-            GetHey();
-
-            GetSmallestNumber(a, b);
-
-            AreTwoNumbersTheSame(a, b);
-
-        }
-
-
-
-
-
-
     }
 }

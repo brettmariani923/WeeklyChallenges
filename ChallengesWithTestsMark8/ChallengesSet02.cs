@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.Design;
 using System.Linq;
 using Microsoft.VisualBasic;
 
@@ -49,7 +50,7 @@ namespace ChallengesWithTestsMark8
 
         public bool IsNumberOdd(int num)
         {
-            if (num % 2 == 1) 
+            if (num % 2 != 0) //checking for just an odd number
             {
                 return true;
             }
@@ -61,10 +62,16 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-           double min = numbers.Min();
-           double max = numbers.Max();
-           Console.WriteLine(min + max);
-           return min + max;
+            if (numbers == null || !numbers.Any())
+            {
+                return 0;
+            }
+       
+            double min = numbers.Min();
+            double max = numbers.Max();
+            Console.WriteLine(min + max);
+            return min + max;
+           
            
         }
 
@@ -75,6 +82,10 @@ namespace ChallengesWithTestsMark8
 
         public int Sum(int[] numbers)
         {
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
             int sum = 0;
             foreach (int number in numbers)
             {
@@ -82,10 +93,16 @@ namespace ChallengesWithTestsMark8
             }
             Console.WriteLine(sum);
             return sum;
+            
         }
 
         public int SumEvens(int[] numbers)
         {
+            if (numbers == null)
+            {
+                return 0;
+            }
+            
             int evenSum = 0;
             foreach (int number in numbers) 
             {
@@ -105,18 +122,22 @@ namespace ChallengesWithTestsMark8
          public bool IsSumOdd(List<int> numbers)
     
         {
+            if (numbers == null)
+            {
+                return false;
+            }
+            
             int sum = 0;
             foreach (int number in numbers) 
             {
-                sum += number;
+                sum += number; 
             }
-
-            if (sum % 2 == 1) return true;
+            if (sum % 2 == 1 || sum % 2 == -1) return true;
             {
                 Console.WriteLine("true");
                 
             }
-            if (sum % 2 == 0) return false;
+            if (sum % 2 != 1) return false;
              
             {
                 Console.WriteLine("false");
